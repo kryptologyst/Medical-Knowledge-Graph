@@ -1,0 +1,38 @@
+# Baseline TransE configuration
+model:
+  name: "TransE"
+  embedding_dim: 100
+  margin: 1.0
+  p_norm: 2
+
+training:
+  epochs: 100
+  batch_size: 512
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  patience: 10
+  early_stopping_patience: 20
+  min_delta: 0.001
+  use_negative_sampling: true
+  num_negatives: 1
+  negative_weight: 1.0
+  num_workers: 4
+
+data:
+  train_path: "data/synthetic_medical_kg.csv"
+  valid_path: "data/valid_medical_kg.csv"
+  test_path: "data/test_medical_kg.csv"
+  train_ratio: 0.8
+  valid_ratio: 0.1
+  test_ratio: 0.1
+  num_entities: 1000
+  num_relations: 20
+  num_triples: 5000
+
+evaluation:
+  k_values: [1, 3, 10]
+  use_filtered_metrics: true
+
+logging:
+  level: "INFO"
+  log_file: "logs/training.log"

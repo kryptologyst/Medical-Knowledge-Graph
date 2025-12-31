@@ -1,0 +1,48 @@
+# Core dependencies
+torch>=2.0.0
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+tqdm>=4.65.0
+pyyaml>=6.0
+omegaconf>=2.3.0
+matplotlib>=3.7.0
+plotly>=5.15.0
+tensorboard>=2.13.0
+
+# Knowledge Graph specific
+networkx>=3.1
+torch-geometric>=2.3.0
+dgl>=1.1.0
+rdflib>=6.3.0
+sparqlwrapper>=2.0.0
+
+# NLP for medical text processing
+transformers>=4.30.0
+datasets>=2.14.0
+scispacy>=0.5.3
+medspacy>=1.0.0
+sentencepiece>=0.1.99
+
+# Graph embeddings and reasoning
+torch-scatter>=2.1.0
+torch-sparse>=0.6.17
+torch-cluster>=1.6.1
+torch-spline-conv>=1.2.2
+
+# Visualization and demos
+streamlit>=1.25.0
+gradio>=3.40.0
+plotly>=5.15.0
+seaborn>=0.12.0
+
+# Development and testing
+pytest>=7.4.0
+black>=23.7.0
+ruff>=0.0.280
+mypy>=1.5.0
+pre-commit>=3.3.0
+
+# Optional: Medical ontologies and databases
+# biopython>=1.81
+# requests>=2.31.0
